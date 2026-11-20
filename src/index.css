@@ -1,0 +1,83 @@
+@import '@fontsource-variable/public-sans';
+
+:root {
+  --green-700: #0f5c4d;
+  --green-800: #0b4a3e;
+  --green-50: #e6f2ef;
+  --bg: #f7f8f7;
+  --surface: #ffffff;
+  --border: #e2e6e4;
+  --text: #1c2623;
+  --muted: #5b6b66;
+
+  --line-strong: color-mix(in srgb, var(--muted) 55%, var(--surface));
+
+  --radius: 10px;
+  --shadow: 0 1px 2px rgba(28, 38, 35, 0.06), 0 1px 3px rgba(28, 38, 35, 0.04);
+
+  font-family: 'Public Sans Variable', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--green-700);
+}
+
+a:hover {
+  color: var(--green-800);
+}
+
+:focus-visible {
+  outline: 3px solid rgba(15, 92, 77, 0.35);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
